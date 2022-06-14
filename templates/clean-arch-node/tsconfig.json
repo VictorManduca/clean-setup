@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "CommonJS",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "rootDirs": ["src", "__tests__"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@main/*": ["src/main/*"],
+      "@presentation/*": ["src/presentation/*"],
+    }
+  },
+  "include": ["src", "__tests__"],
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+  },
+}

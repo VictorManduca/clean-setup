@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  node-app:
+    container_name: "node-app"
+    build: .
+    networks:
+      - backend
+    ports:
+      - 8080:8080
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  node_modules:
