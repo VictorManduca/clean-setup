@@ -19,5 +19,18 @@ clean-setup
 clean-setup --name projects-name
 ```
 
+Once you run the created project, you can run `docker-compose up`  
+Then the project will start on `localhost:8080`
+
+### Routes
+- Health checker (return status code 200):`localhost:8080/api/health-check`
+- Swagger docs: `localhost:8080/api-docs`
+
+### Tests
+Once the project was created, you can simply run  
+```bash
+npm install && npm run test
+```
+
 ## Collaborators
 - VictorManduca <victor.manduca.rizo@gmail.com>
