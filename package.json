@@ -1,6 +1,6 @@
 {
   "name": "clean-setup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI project to create an application using Clean Architecture, Swagger, Unit test with Jest, Express and Docker",
   "main": "index.js",
   "repository": "victormanduca/clean-setup",
@@ -19,7 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "VictorManduca",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "arg": "^5.0.2",
     "esm": "^3.2.25",
