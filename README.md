@@ -8,7 +8,7 @@
 npm install -g @victormanduca/clean-setup
 
 clean-setup
-or 
+# or 
 clean-setup --name projects-name
 ```
 
