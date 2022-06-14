@@ -1,4 +1,4 @@
-<h1 align="center">@victormanduca/clean-setup</h1>
+<h1 align="center">clean-setup</h1>
 
 <p align="center">A CLI to bootstrap new projects</p>
 
@@ -12,10 +12,10 @@ This project was created to bootstrap new projects using Node.js with:
 
 ## Installation & Usage
 ```bash
-npm install -g @victormanduca/clean-setup
+npm install -g clean-setup
 
 clean-setup
-# or 
+# or
 clean-setup --name projects-name
 ```
 
