@@ -22,6 +22,15 @@ clean-setup --name projects-name
 Once you run the created project, you can run `docker-compose up`  
 Then the project will start on `localhost:8080`
 
+### Running without docker
+To run without docker you need to copy and paste the content on `.env.example` file in `.env`. Then, inside the created project:
+```bash
+npm install && npm run start
+
+# or to run with Nodemon
+npm install && npm run start:dev
+```
+
 ### Routes
 - Health checker (return status code 200):`localhost:8080/api/health-check`
 - Swagger docs: `localhost:8080/api-docs`
