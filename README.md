@@ -6,7 +6,10 @@
 
 ```bash
 npm install -g @victormanduca/clean-setup
+
 clean-setup
+or 
+clean-setup --name projects-name
 ```
 
 ## Collaborators
