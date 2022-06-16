@@ -41,5 +41,45 @@ Once the project was created, you can simply run
 npm install && npm run test
 ```
 
+## What the project created with this package contains
+```bash
+./docker-compose.yml
+./src/main/routes/health-check-routes.ts
+./src/main/config/env.ts
+./src/main/config/swagger.ts
+./src/main/config/app.ts
+./src/main/config/routes.ts
+./src/main/middlewares/no-cache.ts
+./src/main/middlewares/index.ts
+./src/main/factory/controllers/health-check-controller-factory.ts
+./src/main/factory/controllers/index.ts
+./src/main/factory/index.ts
+./src/main/server.ts
+./src/main/adapters/express-route-adapter.ts
+./src/main/adapters/index.ts
+./src/main/docs/paths/health-check-path.ts
+./src/main/docs/paths/index.ts
+./src/main/docs/path.ts
+./src/main/docs/index.ts
+./src/presentation/protocols/http.ts
+./src/presentation/protocols/controller.ts
+./src/presentation/protocols/index.ts
+./src/presentation/controllers/health-check-controller.ts
+./src/presentation/controllers/index.ts
+./src/presentation/helpers/http-helper.ts
+./src/presentation/helpers/index.ts
+./nodemon.json
+./.env.example
+./.gitignore
+./.editorconfig
+./Dockerfile
+./jest.config.js
+./package.json
+./.eslintrc.json
+./tsconfig.json
+./.dockerignore
+./__tests__/health-check.spec.ts
+```
+
 ## Collaborators
 - VictorManduca <victor.manduca.rizo@gmail.com>
