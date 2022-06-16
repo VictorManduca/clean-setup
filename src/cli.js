@@ -1,40 +1,40 @@
 import arg from 'arg';
 import inquirer from 'inquirer';
 
-import { createProject } from './helper';
+import {createProject} from './helper';
 
 function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
-    {
-      '--name': String
-    },
-    {
-      argv: rawArgs.slice(2),
-    }
+      {
+        '--name': String,
+      },
+      {
+        argv: rawArgs.slice(2),
+      },
   );
   return {
-    name: args['--name'] || ''
+    name: args['--name'] || '',
   };
 }
 
 async function promptForMissingOptions(options) {
- const defaultProjectName = 'node-app'
+  const defaultProjectName = 'node-app';
 
- const questions = [];
- if (!options.name) {
-   questions.push({
-     type: 'input',
-     name: 'name',
-     message: "What's the project's name?",
-     default: defaultProjectName,
-   });
- }
+  const questions = [];
+  if (!options.name) {
+    questions.push({
+      type: 'input',
+      name: 'name',
+      message: 'What\'s the project\'s name?',
+      default: defaultProjectName,
+    });
+  }
 
- const answers = await inquirer.prompt(questions);
- return {
-   ...options,
-   name: options.name || answers.name,
- };
+  const answers = await inquirer.prompt(questions);
+  return {
+    ...options,
+    name: options.name || answers.name,
+  };
 }
 
 export async function cli(args) {
