@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import {promisify} from 'util';
+import {fileURLToPath} from 'url';
 
 import ncp from 'ncp';
 
@@ -10,8 +11,8 @@ const copy = promisify(ncp);
 
 const currentFileUrl = import.meta.url;
 const templateDir = path.resolve(
-    new URL(currentFileUrl).pathname,
-    '../../templates/clean-arch-node',
+	path.dirname(fileURLToPath(new URL(currentFileUrl))),
+	'../templates/clean-arch-node'
 );
 
 async function copyTemplateFiles(options) {
