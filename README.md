@@ -93,5 +93,5 @@ npm install && npm run test
 15 directories, 31 files
 ```
 
-## Collaborators
+## Creator
 - VictorManduca <victor.manduca.rizo@gmail.com>
