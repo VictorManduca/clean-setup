@@ -1,6 +1,6 @@
 {
   "name": "clean-setup",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A CLI project to create an application using Clean Architecture, Swagger, Unit test with Jest, Express and Docker",
   "main": "index.js",
   "repository": "victormanduca/clean-setup",
